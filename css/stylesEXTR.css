@@ -1,0 +1,133 @@
+* { 
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    height: 100px; 
+}
+
+
+/*---------------------------------iframe edit------------------------------------*/
+.iframer {
+    width: 100%;
+    height: 550px;
+}
+@media screen and (max-width:480px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+.textualo {
+    text-align: center;
+}
+.textualo p {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 10px 10px 30px;
+    position: absolute;
+    bottom: 510px;
+    right: 0;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 50px 0 0 50px;
+}
+
+/*------------------------------redondo-----------------------------------------*/
+.redondo {
+  width: 290;
+  height: 0;
+  position: absolute;
+}
+.redondo p {
+  font-size: 0;
+  position: absolute;
+}
+
+.box:hover .redondo p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  top: 121.5px;
+  left: 102.773px;
+}
+.box:hover .redondo {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transition: width .3s, height .3s, margin .3s;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  background: #000000;
+  opacity: 80%;
+}
+
+/*--------------------------------- blokiu -------------------------*/
+.blokiu {
+    width: 100%;
+    bottom: 0;
+    background: #000000;
+}
+
+/*------------------contenedor carga--------------------*/
+#contenedor_carga {
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+#carga {
+    border: 15px a #c0c4d5;
+    border-top-color: #fe9f00;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    -webkit-animation: girar 0.8s linear infinite;
+    -o-animation: girar 0.8s linear infinite;
+    animation: girar 0.8s linear infinite;
+
+}
+#contenedor_carga p {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    right: 0;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 0px 100px 100px 100px;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
