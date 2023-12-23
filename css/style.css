@@ -11,7 +11,11 @@ body{
     width: 100%;
 }
 .PortadaDest .puntol {
-    height: 550px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .PortadaDest .puntol .degrade {
     position: fixed;
@@ -30,10 +34,29 @@ background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,
 background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
+.PortadaDest .puntol .generos {
+    font-size: 30px;
+    position: absolute;
+    color: #ffffff;
+    top: 665px;
+    font-weight: bold;
+    font-family: sans-serif;
+    z-index: 11;
+}
+.PortadaDest .puntol .studio {
+    font-size: 25px;
+    position: absolute;
+    color: #fe9f00;
+    top: 715px;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    z-index: 11;
+}
 .PortadaDest .puntol .degrade2 {
+    position: absolute;
     width: 100%;
-    height: 400px;
-    margin: -425px 0 0 0;
+    height: 200px;
+    top: 540px;
     transform: rotate(180deg);
     pointer-events: none;
     background: rgba(0,0,0,1);
@@ -49,6 +72,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     width: 100%;
     height: 1000px;
     background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+.PortadaDest .puntol .puntoss {
+    position: absolute;
+    height: 60px;
+    top: 500px;
+    z-index: 11;
+}
+.PortadaDest .puntol .puntosss {
+    position: absolute;
+    height: 100px;
+    display: block;
+    top: 560px;
+    z-index: 11;
 }
 
 
@@ -119,7 +157,7 @@ a{
 }
 
 .box:hover img {
-    filter: contrast(0) brightness(0);
+    filter: contrast(0.4) brightness(0.4);
 }
 /*--responsive for mobile phone--*/
 
@@ -149,6 +187,7 @@ a{
 }
 .lSSlideWrapper {
     max-width: 100%;
+    height: 480px;
     overflow: hidden;
     position: relative;
 }
