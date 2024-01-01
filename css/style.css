@@ -25,6 +25,7 @@ body{
     height: 150px;
     z-index: 1;
     pointer-events: none;
+    z-index: 12;
     background: rgba(0,0,0,1);
 background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
